@@ -51,7 +51,7 @@ function montarPergunta() {
                 <h2>${alterarSinais(quiz.questions[pergunta-1].question)}</h2>
             </div>
             <div class="barra_progresso">
-                <div style="width: ${pergunta*10}%"></div>
+                <div style="width: ${pergunta * 10}%"></div>
             </div>
         </section>
 
@@ -85,7 +85,7 @@ function montarPergunta() {
                 </label>
 
                 <label for="alternativa_d">
-                    <input type="radio" id="alternativa_d" name="alternativa" value="${alterarSinais(quiz.questions[pergunta-1].options[3])} ">
+                    <input type="radio" id="alternativa_d" name="alternativa" value="${alterarSinais(quiz.questions[pergunta-1].options[3])}">
 
                     <div>
                         <span>D</span>
@@ -106,6 +106,9 @@ function alterarSinais(texto) {
 function guardarResposta(evento) {
     resposta = evento.target.value
     idInputResposta = evento.target.id
+
+    console.log(resposta)
+    console.log(idInputResposta)
 
     const botaoEnviar = document.querySelector(".alternativas button")
     botaoEnviar.addEventListener("click", validarResposta)
