@@ -193,10 +193,10 @@
                 {
                     "question": "Qual é o valor padrão da propriedade 'position'?",
                     "options": [
-                        "static",
+                        "relative",
                         "fixed",
                         "absolute",
-                        "relative"
+                        "static"
                     ],
                     "answer": "static"
                 },
@@ -261,8 +261,8 @@
                     "options": [
                         "for (i = 0; i <= 5)",
                         "for i = 1 to 5",
-                        "for (i = 0; i <= 5; i++)",
-                        "for (i <= 5; i++)"
+                        "for (i <= 5; i++)",
+                        "for (i = 0; i <= 5; i++)"
                     ],
                     "answer": "for (i = 0; i <= 5; i++)"
                 },
@@ -335,10 +335,10 @@
                 {
                     "question": "Qual elemento é usado para fornecer texto alternativo para imagens para usuários de leitores de tela?",
                     "options": [
-                        "<img alt='descrição'>",
+                        "<alt>",
                         "<figcaption>",
                         "<description>",
-                        "<alt>"
+                        "<img alt='descrição'>"
                     ],
                     "answer": "<img alt='descrição'>"
                 },
